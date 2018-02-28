@@ -1,0 +1,119 @@
+html {
+  font-size: 625%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+p, ul {
+  margin: 0; }
+
+header {
+  font-size: 0.2rem;
+  color: white;
+  background-color: #5fc0cd;
+  height: 60px;
+  padding: 0 0.1rem;
+  position: relative; }
+  header a {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  header p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translate(50%, -50%);
+    right: 50%; }
+
+main {
+  font-size: 0.14rem; }
+
+.user-select {
+  background: url("../img/user.png") no-repeat center;
+  background-size: cover;
+  height: 1.63rem;
+  display: flex;
+  align-items: center;
+  color: white; }
+
+.user-select-img {
+  width: 0.8rem;
+  margin-left: 0.2rem; }
+
+.user-select-text {
+  margin: 0 0.3rem; }
+
+.user-information-title {
+  border-bottom: 1px solid #cccccc; }
+
+.user-information p {
+  border-left: #5fc0cd 3px solid;
+  line-height: 0.2rem;
+  margin: 0.15rem 0.1rem;
+  padding-left: 0.05rem;
+  font-size: 0.15rem; }
+
+ul {
+  list-style: none;
+  padding: 0 0.15rem; }
+
+li {
+  border-bottom: 1px solid #cccccc;
+  line-height: 0.4rem;
+  display: flex;
+  padding: 0.1rem 0; }
+
+.img-star {
+  width: 0.15rem; }
+
+.li-left {
+  color: #cccccc;
+  margin: 0 0.1rem;
+  min-width: 0.6rem;
+  border-right: 1px solid #cccccc;
+  padding-right: 0.1rem;
+  display: flex;
+  align-items: center; }
+
+.li-1 {
+  margin-left: 0.1rem; }
+
+.li-2 {
+  padding-left: 0.1rem; }
+
+span {
+  color: red; }
+
+footer {
+  display: flex;
+  width: 100%;
+  background: white;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0; }
+
+button {
+  height: 0.45rem;
+  width: 45%;
+  border-radius: 0.1rem;
+  margin: 0.1rem 0.05rem;
+  font-size: 0.15rem;
+  border: solid 2px #5fc0cd;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s; }
+  button:hover {
+    color: aqua; }
+
+.bt-2 {
+  background: #5fc0cd;
+  color: white; }
+
+.bt-1 {
+  background: #ffffff;
+  color: #5fc0cd; }
+
+/*# sourceMappingURL=mycss.css.map */

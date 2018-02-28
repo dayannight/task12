@@ -1,0 +1,32 @@
+@charset "utf-8";
+html{
+  font-size: 625%;
+}
+body{
+  margin: 0;
+
+}
+
+//---------------------------混合器↓
+
+@mixin center-vertically{ //垂直居中
+  position: absolute;
+  top:50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+@mixin flex-vertical{//flex方法的垂直居中
+  display: flex;
+  align-items: center;
+}
+
+//-------------------------------↑
+
+
+
+
+//----------------------函数↓
+
+$border-style:1px solid #d3d3d3;//基础边框样式
+
+//----------------------------函数↑
