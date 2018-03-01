@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import "basis";//导入库文件
+body{
+  font-size: .14rem;
+}
+header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: .6rem;
+  background-color: #5ec0ce;
+  button{
+    width: .8rem;
+    height: .4rem;
+    border: none;
+    border-radius: .1rem;
+    font-size: 16px;
+
+  }
+  .btn-header-findworker{
+    margin-left: -0.08rem;
+    background-color: #fffeff;
+    color: #5ec0ce;
+  }
+  .btn-header-findmaster{
+    background-color: #53a9b2;
+    color: white;
+  }
+  img{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%) scale(.7);
+    right: 2%;
+  }
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav{
+  display: flex;
+}
+.nav>li{//下拉框样式
+  line-height: .3rem;
+  width: 33.3333333%;
+  text-align: center;
+  border-bottom: $border-style ;
+}
+
+.li-main-mid,.li-main-side{//中间和两边的下拉框hover
+  height: .5rem;
+  padding: .1rem 0;
+  box-sizing: border-box;
+  &:hover .down-menu{
+    display: block;
+    position: relative;
+    top:10px;
+  }
+}
+
+.down-menu-title{
+  position: relative;
+  width: 100%;
+  border-right:$border-style ;
+  img{
+    @include center-vertically;
+    right: 15px;
+  }
+
+}
+
+.down-menu{
+  display: none;
+  background: white;
+  border-bottom:$border-style ;
+  border-right: $border-style;
+  border-left: $border-style;
+  margin-right: -1px;
+  z-index: 2;
+}
+.down-menu:hover{
+    background-color:#bebfc1;
+}
+
+/*下面是content*/
+.content{
+  border-bottom: $border-style;
+  padding:  0;
+  color:#b4b5b7;
+}
+.ul-content li{
+  line-height: .3rem;
+  img{
+    transform: scale(.85);
+    position: relative;
+    top: 8px;
+    margin-left: 5px;
+  }
+}
+.li-content-mid{
+  padding: 0 20px;
+  color: black;
+}
+.price{
+  float: right;
+  color: red;
+}
+.jump-5{
+  color: red;
+  text-align: center;
+}
+/*FOOOOOOOOOOOOOOOOTER*/
+
+footer{
+  height: .6rem;
+  background-color: #e4e6e8;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: .1rem 0;
+  button{
+    height: .6rem;
+    width:.6rem;
+
+    background-color: #5ec0ce;
+    border-radius: 50%;
+    border: none;
+}
+  a {
+    text-align:center;
+    text-decoration: none;
+    margin: auto 0;
+}
+.index{
+  color: #5ec0ce;
+}
+.mine{
+  color: #b4b5b7;
+}
+}
+body{
+  overflow-x: hidden;
+  overflow-y: initial;
+}
